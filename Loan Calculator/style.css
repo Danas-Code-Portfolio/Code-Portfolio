@@ -11,10 +11,20 @@ column_loan{
     text-align: right;
 }
 p{
-    font-size: 80pt;
+    font-size: 40pt;
 }
 
 .columnLoan{
     column_loan{
         text-align: left;
 }
+
+#test{
+    background-color: brown;
+    background: brown;
+    
+}
+.bod{
+    background-color: brown;
+}
+

@@ -12,15 +12,22 @@ var length = (document.getElementById("loanLength").value);
 var interest = (document.getElementById("loanInterest").value); 
 
 //Calculate Loan Details
-var first =  amount * interest;
+var test = parseInt(amount);
+var first =  amount + answer;
 var some = amount / length;
 var more = some / interest
 var final = more  * length;
 var total = (first * length);
 var last = total + final;
-console.log(total);
+var rate = length / 12;
+var i = interest / 100;
+var answer = amount * rate * i;
+var rounded = Math.round(answer);
+let monthly = (rounded + test);
 
-document.getElementById('amount').innerHTML = ("$") +last +(" /Month");
+
+document.getElementById('amount').innerHTML = ("$") + rounded +(" /Month");
+document.getElementById('monthly').innerHTML = ("$") + monthly +(" /Month");
 }
 
 
