@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="guess.js"></script>  
+</head>
+<body class="body" >
+    
+<h1 class="header">Pick a number between 1-10</h1>
+  <img src="guessing.jpeg">
+    
+ <form   id="form" class="form" action="javascript:void(0);"> 
+    <input id="userInput" type="text" placeholder="Enter Your Guess">
+    <input type="button" value="Submit Guess" onclick="compare();">
+    <input type="button" value="Play Again?" onclick="window.location.reload();">
+ </form>
+
+  <div class="firstGuess"></div>              
+<h1 id="actual">Previous Number Guessed</h1>
+ <p id="post"></p>
+
+</div>       
+
+
+<div id="second" class="secondGuess">
+ <h1 class="actual">All Numbers Guessed</h1>
+ <p id="post2"></p>
+</div>
+                
+ 
+<script src="guess.js"></script> 
+</body>
+</html>

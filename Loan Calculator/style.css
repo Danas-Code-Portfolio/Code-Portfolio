@@ -1,0 +1,20 @@
+form{
+    text-align: center; 
+    font-size: 25pt;
+}
+
+h2{
+    text-align: center;
+}
+
+column_loan{
+    text-align: right;
+}
+p{
+    font-size: 80pt;
+}
+
+.columnLoan{
+    column_loan{
+        text-align: left;
+}

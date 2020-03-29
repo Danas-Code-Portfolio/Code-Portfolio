@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Your Loans</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="ui center aligned container">
+        <h1 class="pageTitle">Calculate Your Loan</h1>
+    </div> <br><br>
+
+    <div id="info" class="ui vertically divided grid">
+            <div class="two column row">
+                <div class="column">
+                    <h2 id="h2_loan">Enter Your Desired Loan Amount</h2>
+                    <form id="form" action="javascript:void(0);">
+                        <label id="loanAmt"></label><br>
+                        <input type="text" id="loanTxt" placeholder="Requested Amount"><br>
+                        <label for="loanLength"></label><br>
+                        <input type="text" id="loanLength" placeholder="Loan Term (Months)"><br>
+                        <label for="interest"></label><br>
+                        <input type="text" id="loanInterest" placeholder="Interest Rate"><br><br>
+                        <input type="button" Value="Calculate" onclick="calculate();">
+                    </form>
+                </div>
+                    <div class="column2">
+                    <h2 class="columnLoan" id="column_loan">Loan Details</h2>
+                        <p id="amount"></p>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
