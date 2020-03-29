@@ -24,10 +24,11 @@ var i = interest / 100;
 var answer = amount * rate * i;
 var rounded = Math.round(answer);
 let monthly = (rounded + test);
+let payback = (test / length) + rounded;
 
 
 document.getElementById('amount').innerHTML = ("$") + rounded +(" /Month");
-document.getElementById('monthly').innerHTML = ("$") + monthly +(" /Month");
+document.getElementById('monthly').innerHTML = ("$") + payback +(" /Month");
 }
 
 
